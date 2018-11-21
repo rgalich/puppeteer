@@ -7,7 +7,7 @@ export class PuppeteerService {
     pages = [];
 
     async launchBrowser() {
-        return await puppeteer.launch({ headless: true });
+        return await puppeteer.launch({ args: ['--no-sandbox'] });
     }
 
     async createPage(browser: any, url: string) {
