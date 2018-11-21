@@ -11,14 +11,6 @@ export class InvestirService {
     async onModuleInit() {
         const browser =  await this.puppeteerService.launchBrowser();
         await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-pixium-vision,xpar,pix,fr0011950641,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-spineway,xpar,alspw,fr0011398874,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-wallix,xpar,allix,fr0010131409,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-pixium-vision,xpar,pix,fr0011950641,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-spineway,xpar,alspw,fr0011398874,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-wallix,xpar,allix,fr0010131409,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-pixium-vision,xpar,pix,fr0011950641,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-spineway,xpar,alspw,fr0011398874,isin.html');
-        await this.puppeteerService.createPage(browser, 'https://investir.lesechos.fr/cours/action-wallix,xpar,allix,fr0010131409,isin.html');
 
         timer(0, 10000).pipe(
             tap(_ => this.initStockSheet()),
